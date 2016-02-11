@@ -1,7 +1,7 @@
 {
   "name": "wellstoried",
   "version": "1.0.0",
-  "description": "",
+  "description": "Demo for Nickel Media",
   "main": "gulpfile.js",
   "dependencies": {
     "gulp": "^3.9.1",
@@ -14,16 +14,16 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AJCrowley/WellStoried.git"
   },
-  "author": "",
+  "author": "Kris McCann <kris@8pi.ca>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AJCrowley/WellStoried/issues"
   },
-  "homepage": "https://github.com/AJCrowley/WellStoried#readme"
+  "homepage": "http://wellstoried.8pi.ca/"
 }

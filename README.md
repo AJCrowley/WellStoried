@@ -1,4 +1,8 @@
 #WellStoried Demo
+
+Live version hosted at [http://wellstoried.8pi.ca/](http://wellstoried.8pi.ca/)
+
+
 Gulp usage: 
 
 ```
