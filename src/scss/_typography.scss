@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'socicon';
+    src: url('../fonts/socicon-webfont.eot');
+    src: url('../fonts/socicon-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/socicon-webfont.woff') format('woff'),
+         url('../fonts/socicon-webfont.ttf') format('truetype'),
+         url('../fonts/socicon-webfont.svg#socicon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'landrover';
+    src: url('../fonts/landrovermedl4-webfont.eot');
+    src: url('../fonts/landrovermedl4-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/landrovermedl4-webfont.woff') format('woff'),
+         url('../fonts/landrovermedl4-webfont.ttf') format('truetype'),
+         url('../fonts/landrovermedl4-webfont.svg#landrovermedl4') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'avenir-book';
+    src: url('../fonts/AvenirLTStd-Book.eot');
+    src: url('../fonts/AvenirLTStd-Book.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/AvenirLTStd-Book.ttf') format('truetype'),
+         url('../fonts/AvenirLTStd-Book.svg#avenir') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import '../fonts/socicon.css';

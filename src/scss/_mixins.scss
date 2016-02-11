@@ -1,0 +1,16 @@
+@mixin bg-image($image, $image-retina) {
+	background-image: url($image);
+	@media (min--moz-device-pixel-ratio: 1.3),
+	(-o-min-device-pixel-ratio: 2.6/2),
+	(-webkit-min-device-pixel-ratio: 1.3),
+	(min-device-pixel-ratio: 1.3),
+	(min-resolution: 1.3dppx) {
+		background-image: url($image-retina);
+	}
+}
+
+@mixin bg-image-portrait($image, $image-retina) {
+	@media only screen and (max-width: $portrait-width) {
+		@include bg-image($image, $image-retina);
+	}
+}
