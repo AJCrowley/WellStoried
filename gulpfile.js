@@ -5,7 +5,7 @@ var gulp = require('gulp'),
 	plumber = require('gulp-plumber'),
 	watch = require('gulp-watch');
 
-gulp.task('build', ['images', 'compass', 'uglify', 'dist']);
+gulp.task('build', ['compass', 'images', 'uglify', 'dist']);
 
 gulp.task('dist', function() {
 	gulp.src('./src/*.html')
