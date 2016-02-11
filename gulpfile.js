@@ -30,7 +30,7 @@ gulp.task('compass', function() {
 			css: './src/css',
 			sass: './src/scss'
 		}))
-	.pipe(gulp.dest('./css'));
+	.pipe(gulp.dest('./src/css'));
 });
 
 gulp.task('images', function(cb) {
