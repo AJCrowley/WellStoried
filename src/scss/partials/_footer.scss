@@ -1,0 +1,24 @@
+footer {
+	bottom: 0;
+	height: 32px;
+	position: absolute;
+
+	@media only screen and (max-width: $portrait-width) {
+		display: none;
+	}
+
+	a {
+		color: $footer-link-color;
+		display: inline-block;
+		font-size: 0.5rem;
+		padding-bottom: 15px;
+		padding-left: 22px;
+		text-decoration: none;
+		text-transform: uppercase;
+		transition: color 1s ease;
+
+		&:hover {
+			color: $footer-link-hover-color;
+		}
+	}
+}

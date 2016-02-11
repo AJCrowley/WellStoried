@@ -1,0 +1,87 @@
+header {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	padding: 15px;
+
+	@media only screen and (max-width: $portrait-width) {
+		background-color: #000;
+	}
+
+	.lr_logo {
+		background-size: 57px 28px;
+		display: block;
+		height: 28px;
+		width: 57px;
+		@include bg-image('../img/lr_logo.png', '../img/lr_logo@2x.png');
+	}
+
+	.hashtag {
+		color: $link-color;
+		margin-left: 15px;
+		text-decoration: none;
+		text-transform: uppercase;
+		transition: color 1s ease;
+
+		@media only screen and (max-width: $portrait-width) {
+			margin: 0 auto;
+		}
+
+		&:hover {
+			color: lighten($link-hover-color, 25%);
+		}
+	}
+
+	.responsive-menu {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 15px 12px;
+		display: none;
+		height: 28px;
+		width: 57px;
+		@include bg-image('../img/responsive_menu.png', '../img/responsive_menu@2x.png');
+
+		@media only screen and (max-width: $portrait-width) {
+			display: block;
+		}
+	}
+
+	.tumblr {
+		color: $link-color;
+		position: absolute;
+		right: 15px;
+		text-align: center;
+		text-decoration: none;
+		top: 0;
+		transition: color 1s ease;
+		width: 58px;
+
+		@media only screen and (max-width: $portrait-width) {
+			display: none;
+		}
+
+		&:hover {
+			color: $link-hover-color;
+		}
+
+		.circle {
+			background-color: rgba(0, 0, 0, 0.3);
+			border-radius: 38px;
+			height: 58px;
+			position: absolute;
+			width: 58px;
+			top: -29px;
+		}
+
+		.socicon {
+			margin: 4px auto;
+		}
+
+		.text {
+			display: block;
+			font-size: 0.7rem;
+			padding-top: 15px;
+			text-transform: uppercase;
+		}
+	}
+}

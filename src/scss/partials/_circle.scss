@@ -1,0 +1,128 @@
+section {
+	align-items: center;
+	bottom: 32px;
+	display: flex;
+	flex-direction: column;
+	font-size: 11px;
+	justify-content: center;
+	min-height: 516px;
+	position: absolute;
+	text-transform: uppercase;
+	top: 58px;
+	width: 100%;
+
+	> svg {
+		@media only screen and (max-width: $portrait-width) {
+			width: 320px;
+		}
+	}
+
+	article {
+		color: $light-link-color;
+		height: 144px;
+		text-align: center;
+
+		&.presents {
+				h3 {
+					color: #fff;
+					font-family: 'landrover', sans-serif;
+					font-size: 26px;
+					font-weight: 400;
+					margin-bottom: 0;
+					margin-top: 56px;
+					text-transform: uppercase;
+
+					@media only screen and (max-width: $portrait-width) {
+						font-size: 18px;
+						margin-top: 84px;
+					}
+				}
+		}
+
+		&.main {
+			height: 228px;
+
+			@media only screen and (max-width: $portrait-width) {
+				height: 114px;
+			}
+
+			> .well-storied {
+				background-size: 432px 42px;
+				height: 42px;
+				margin-top: 74px;
+				width: 432px;
+				@include bg-image('../img/well_storied.png', '../img/well_storied@2x.png');
+
+				@media only screen and (max-width: $portrait-width) {
+					background-size: 216px 21px;
+					height: 21px;
+					margin-top: 33px;
+					width: 216px;
+				}
+			}
+
+			> p {
+				margin-top: 27px;
+
+				@media only screen and (max-width: $portrait-width) {
+					margin-top: 13px;
+				}
+			}
+		}
+
+		&.social {
+			> p:first-child {
+				margin-top: 25px;
+
+				@media only screen and (max-width: $portrait-width) {
+					margin-top: 12px;
+				}
+			}
+
+			> p {
+				margin-top: 17px;
+
+				> a {
+					color: $light-link-color;
+					font-size: 16px;
+					margin: 0 8px;
+					text-transform: none;
+
+					&:hover {
+						color: $light-link-hover-color;
+						transition: color 1s ease;
+					}
+				}
+			}
+		}
+	}
+
+	.circle {
+		stroke-dasharray: 1615;
+		stroke-dashoffset: 1615;
+		animation: dash 1.5s ease forwards;
+	}
+
+	@keyframes dash {
+		to {
+			stroke-dashoffset: 0;
+		}
+	}
+
+	h1 {
+		font-size: 50px;
+	}
+
+	hr {
+		background-repeat: repeat-x;
+		background-size: 4px 2px;
+		border: none;
+		height: 4px;
+		width: 454px;
+		@include bg-image('../img/rule_dashed.png', '../img/rule_dashed@2x.png');
+
+		@media only screen and (max-width: $portrait-width) {
+			width: 290px;
+		}
+	}
+}
